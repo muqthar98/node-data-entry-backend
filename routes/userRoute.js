@@ -2,7 +2,7 @@ import User from "../models/userModel.js";
 
 export const createUser = async (req, res) => {
   try {
-    const {name,phoneNumber,itemName,advanceAmount,address,isPaid} = req.body;
+    const {name,phoneNumber,itemName,advanceAmount,address,balanceAmount,isPaid} = req.body;
     const user = await User.create({name,phoneNumber,itemName,advanceAmount,balanceAmount,address,isPaid});
     res.json({status:200,message:"User created successfully",user});
   } catch (err) {
