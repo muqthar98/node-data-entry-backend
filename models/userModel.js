@@ -13,6 +13,9 @@ const userSchema = new mongoose.Schema({
     advanceAmount:{
         type: Number,
     },
+    balanceAmount:{
+       type: Number,
+    },
     address:{
         type: String,
     },
